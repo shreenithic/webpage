@@ -57,7 +57,7 @@
     flex-direction: column;
     position: absolute;
     gap:-3;
-    top: 10vh;
+    top: 8vh;
     left: 46vw;
     z-index:1;
     align-self:flex-start;
@@ -591,7 +591,7 @@
 
 @media screen and (max-width: 1080px) {
     .name h1{
-        font-size: 8rem;
+        font-size: 8.5rem;
     }
     .wish-bubble{
         top: 8vh;
@@ -644,10 +644,13 @@
 
   @media screen and (max-width: 900px){
     .name h1{
-        font-size: 5rem;
+        font-size: 8rem;
+    }
+    .name{
+        top:10vh;
     }
     .wish-bubble{
-        top: 5vh;
+        top: 4vh;
         left: 43vw;
     }
 
@@ -797,7 +800,14 @@
     .header>:nth-child(3){
         display: none;
     }
+     
+    .name h1{
+      font-size: 6rem;
+    }
 
+    .name{
+        top:12vh;
+    }
     .wish-bubble{
         top: 3vh;
         left: 43vw;
@@ -840,6 +850,10 @@
   }
 
   @media screen and (max-width: 435px){
+
+    .name h1{
+        font-size: 4rem;
+    }
     .wish-bubble{
         top: 3vh;
         left: 43vw;
@@ -856,6 +870,10 @@
         width: 92%;
         padding-left: 6px;
         padding-right: 6px ;
+    }
+
+    .form-input #submit{
+        margin-right: 15px;
     }
 
     .signature img{

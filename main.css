@@ -89,9 +89,6 @@
  
 }
 
-
-
-
 .wish p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
@@ -337,9 +334,6 @@
     height:300px;
 }
 
-.contact>div{
-    border: 0.85px solid rgba(178, 183, 192,0.5);;
-}
 
 .experience{
     display: flex;
@@ -711,6 +705,14 @@
         grid-area: col5;
       }
 
+      .about>:nth-child(2){
+         border-top:none;
+      }
+
+      .about>:nth-child(3){
+         border-bottom:none;
+      }
+
 
       .experiment-content{
         display: flex;
@@ -779,12 +781,26 @@
   }
 
   @media screen and (max-width: 650px){
+
+    .top{
+        grid-template-columns: 1fr 12fr 1fr; 
+    }
+
+    .top>:nth-child(3){
+        display: none;
+    }
+
+    .header{
+        grid-template-columns: 1fr 12fr 1fr; 
+    }
+
+    .header>:nth-child(3){
+        display: none;
+    }
+
     .wish-bubble{
         top: 3vh;
         left: 43vw;
-    }
-    .footer-content h4{
-        padding-left:42%;
     }
 
     .about {
@@ -816,6 +832,11 @@
       .about > :nth-child(5) {
         grid-area: col5;
       }
+
+      .footer-content h4{
+        padding-left:42%;
+    }
+
   }
 
   @media screen and (max-width: 435px){
@@ -872,6 +893,10 @@
       .about > :nth-child(5) {
         grid-area: col5;
       }
+
+      .wish-bubble{
+        visibility: hidden;
+    }
 
 
   }

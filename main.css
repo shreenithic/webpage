@@ -245,8 +245,6 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    flex-shrink: 2;
 }
 
 .image div{
@@ -430,11 +428,6 @@
 .work{
     height: 400px;
     background-image:url(images/dotted-bg.jpg);
-}
-
-.work>div{
-    border: 0.85px solid rgba(178, 183, 192,0.5);
-    border-bottom: none;
 }
 
 .work{
@@ -664,7 +657,6 @@
         left: 43vw;
     }
 
-
     .top{
         grid-template-columns: 1fr 10fr 2fr 1fr; 
     }
@@ -789,38 +781,62 @@
     }
   }
 
+  @media screen and (max-width: 500px){
+    .wish-bubble{
+        top: 3vh;
+        left: 43vw;
+    }
+  }
+
   /*=============Larger Screens==========*/
 
-  @media screen and (min-width: 1920px){
+   @media screen and (min-width: 1920px){
     .name h1{
-        font-size: 5rem;
+        font-size: 7rem;
     }
 
     .name{
-        top:10vh;
-        left: 8vw;
+        top:11vh;
+        left: 17vw;
     }
 
     .wish-bubble{
         top: 8vh;
-        left: 35vw;
+        left: 36vw;
     } 
 
 }
 
-  @media screen and (min-width: 3000px){
+@media screen and (min-width: 2880px){
     .name h1{
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     .name{
-        top:5vh;
-        left: 8vw;
+        top:9vh;
+        left: 26vw;
     }
 
     .wish-bubble{
-        top: 5vh;
-        left: 35vw;
+        top: 6vh;
+        left: 36vw;
+    } 
+
+}
+
+@media screen and (min-width: 3840px){
+    .name h1{
+        font-size: 6rem;
+    }
+
+    .name{
+        top:6vh;
+        left: 34vw;
+    }
+
+    .wish-bubble{
+        top: 4vh;
+        left: 43vw;
     }
 
     .signature img{
@@ -828,29 +844,61 @@
         height: 12%;
         width: 25%;
     }
-} 
 
-@media screen and (min-width: 5000px){
+}  
+
+  @media screen and (min-width: 4800px){
     .name h1{
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     .name{
-        top:3vh;
-        left: 8vw;
+        top:4vh;
+        left: 42vw;
     }
 
     .wish-bubble{
-        top: 3vh;
-        left: 35vw;
+        top: 2.5vh;
+        left: 47vw;
     }
-
 
     .signature img{
         margin: 5px;
         height: 12%;
         width: 25%;
     }
-} 
 
- 
+}  
+
+/*=============Zoom Out============*/
+
+@media screen and (min-width: 1920px) {
+    .container {
+      max-width: 80%; 
+      margin: 0 auto; 
+      transition: max-width; 
+    }
+  }
+  
+  @media screen and (min-width: 2880px) {
+    .container {
+      max-width: 60%; 
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (min-width: 3840px) {
+    .container {
+      max-width: 40%;
+      margin: 0 auto; 
+    }
+  }
+  
+  @media screen and (min-width: 4800px) {
+    .container {
+      max-width: 20%; 
+      margin: 0 auto; 
+    }
+  }
+  
+

@@ -7,7 +7,10 @@
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+::selection {
+    background-color: rgb(51, 203, 51);
+    color: black;
+}
 /*===============Background Grid===============*/
 
 .container{
